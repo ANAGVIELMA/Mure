@@ -143,7 +143,7 @@ header .CTA {
 /*SECTION 1: BANNER PRINCIPAL--------------------------------------------------------------*/
 
 #section1 {
-    background: url(Assets/bg-S1.jpg);
+    background: url(../Assets/bg-S1.jpg);
     color: #fff;
 }
 
@@ -202,13 +202,13 @@ header .CTA {
 #section2 .col1 .imgDiv {
     margin-left: -6 0px;
     padding: 80px 0 0 140px;
-    background-image: url(Assets/bg_s2_c1.png);
+    background-image: url(../Assets/bg_s2_c1.png);
     background-repeat: no-repeat;
 }
 
 #section2 .col2 .imgDiv {
     padding: 60px 80px 0px 0px;
-    background-image: url(Assets/bg_s2_c2.png);
+    background-image: url(../Assets/bg_s2_c2.png);
     background-repeat: no-repeat;
     background-position: top right;
     margin-top: 40px;
@@ -229,7 +229,7 @@ header .CTA {
 #section3 {
     color: #fff;
     padding-top: 50px;
-    background-image: url(Assets/bg_s3.png);
+    background-image: url(../Assets/bg_s3.png);
     background-repeat: no-repeat;
     background-position: top center;
 }
@@ -288,7 +288,7 @@ header .CTA {
 }
 
 #section4 .img1 {
-    background-image: url(Assets/bg_s4_1.png);
+    background-image: url(../Assets/bg_s4_1.png);
     background-position: top right;
     background-repeat: no-repeat;
 }
@@ -299,7 +299,7 @@ header .CTA {
 }
 
 #section4 .img2 {
-    background-image: url(Assets/bg_s4_2.png);
+    background-image: url(../Assets/bg_s4_2.png);
     background-position: top left;
     background-repeat: no-repeat;
 }
