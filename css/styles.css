@@ -93,7 +93,7 @@ p {
 
 header .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -104,7 +104,6 @@ header {
 }
 
 header .logo {
-    width: 39%;
     background: none !important;
 }
 
@@ -112,13 +111,12 @@ header .logo svg {
     width: 120px;
 }
 
-header .Contact {
-    width: 50%;
-}
+
+/*header .Contact {}
 
 header .CTA {
     width: 10%;
-}
+}*/
 
 .Contact {
     display: flex;
@@ -145,6 +143,8 @@ header .CTA {
 #section1 {
     background: url(../Assets/bg-S1.jpg);
     color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #section1 .bgBlue78 {
@@ -543,4 +543,179 @@ footer .Contact {
     display: flex;
     justify-content: center;
     padding: 30px 6vw;
+}
+
+@media (max-width:767px) {
+    html {
+        overflow-x: hidden;
+        box-sizing: border-box !important;
+    }
+    .col,
+    img {
+        width: 100%;
+    }
+    section .container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    /*------------------------------------------------------HEADER*/
+    .Contact {
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 0;
+    }
+    header .container {
+        flex-direction: column;
+    }
+    header {
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*------------------------------------------------------SECTION 1*/
+    #section1 .bgBlue78 {
+        height: 250px;
+    }
+    #section1 .col1 {
+        width: 80%;
+        padding: 50px 0;
+    }
+    #section1>.col1 h1 .robotoCondensed {
+        font-size: 1.2em;
+    }
+    /*------------------------------------------------------SECTION 2*/
+    section#section2 {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px;
+    }
+    #section2 .container {
+        width: 100%;
+    }
+    #section2 .col1 .imgDiv,
+    #section2 .col2 {
+        margin: 0;
+        padding: 0;
+    }
+    #section2 .col2 {
+        order: 1;
+    }
+    #section2 .col1 {
+        order: 2;
+        margin-top: 30px;
+    }
+    #section2 p {
+        order: 1;
+        padding: 10px 0 !important;
+    }
+    #section2 .CTA {
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+    /*------------------------------------------------------SECTION 4*/
+    #section4 {
+        box-sizing: border-box;
+    }
+    #section4 .container {
+        box-sizing: border-box;
+        flex-direction: column;
+        padding: 20px;
+    }
+    #section4 ul.level1 {
+        padding: 0;
+        line-height: 1;
+    }
+    #section4 ul.level1 li {
+        line-height: 1.5;
+        font-size: 1.2em;
+    }
+    #section4 ul.level2 li {
+        font-size: 0.8em;
+    }
+    #section4 .img1.imgDiv,
+    #section4 .img2.imgDiv {
+        margin-bottom: 20px;
+        padding: 20px;
+        color: #fff;
+    }
+    /*------------------------------------------------------SECTION 5*/
+    #section5 {
+        box-sizing: border-box;
+    }
+    #section5 .titleSection {
+        padding: 0;
+        margin: 0;
+    }
+    #section5 .lines1,
+    #section5 .lines2 {
+        display: none;
+    }
+    #section5 h2 {
+        width: 100%;
+        margin: 30px;
+    }
+    #section5 .col20 .imgDiv {
+        display: none;
+    }
+    #section5 .col20 {
+        order: 5;
+    }
+    #section5 .container {
+        box-sizing: border-box;
+        flex-direction: column;
+        padding: 20px;
+    }
+    /*------------------------------------------------------SECTION 6*/
+    #section6 .container,
+    #section6,
+    #section6 .col {
+        box-sizing: border-box;
+    }
+    #section6 {
+        padding: 20px;
+    }
+    #section6 .lines {
+        display: none;
+    }
+    #section6 ol.height200 {
+        padding-left: 10px;
+    }
+    #section6 ol.height200 li {
+        font-size: 0.8em;
+        margin-left: 20px;
+    }
+    #section6 .height200 {
+        height: auto;
+    }
+    #section6 .height200:first-child {
+        height: 160px;
+    }
+    /*------------------------------------------------------SECTION 7*/
+    #section7 {
+        flex-direction: column;
+    }
+    #section7 .col2 {
+        padding: 0;
+    }
+    #section7 p {
+        text-align: center;
+        margin: 5px 15px 10px;
+    }
+    /*------------------------------------------------------SECTION 8*/
+    #section8 {
+        flex-direction: column;
+    }
+    /*------------------------------------------------------FOOTER*/
+    footer .Contact {
+        margin: 0;
+    }
+    footer .row2 .container {
+        width: 90%;
+    }
+    footer .row2 .container .logo {
+        padding: 0 20px;
+    }
 }
